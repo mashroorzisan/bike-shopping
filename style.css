@@ -9,7 +9,7 @@ body {
 .navbar {
     background-color: #03203C;
     color: white;
-    padding: 25px 60px;
+    padding: 1.5em 4em;
     /* Add some padding to the navbar for spacing */
     display: flex;
     flex-direction: row;
@@ -24,8 +24,8 @@ body {
 .cart {
     background-color: #fff;
     color: black;
-    font-size: 50px;
-    padding: 5px;
+    font-size: 4em;
+    padding: .1em;
     border-radius: 4px;
     position: relative;
 
@@ -36,7 +36,7 @@ body {
     position: absolute;
     top: -17px;
     right: -9px;
-    font-size: 20px;
+    font-size: .6em;
     padding: 5px;
     background-color: red;
     border-radius: 5px;
@@ -91,4 +91,18 @@ body {
 
 .amount .bi-plus:hover {
     color: yellowgreen;
+}
+
+@media (max-width:1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 240px);
+    }
+}
+
+@media (max-width:580px) {
+    .shop {
+        grid-template-columns: repeat(1, 240px);
+    }
+
+    .cart {}
 }
