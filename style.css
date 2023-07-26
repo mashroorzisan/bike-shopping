@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #03203C;
+    color: white;
+    padding: 25px 60px;
+    /* Add some padding to the navbar for spacing */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.navbar span {
+    color: rgb(255, 0, 0);
+}
+
+.cart {
+    background-color: #fff;
+    color: black;
+    font-size: 50px;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+
+}
+
+.cartAmount {
+    color: white;
+    position: absolute;
+    top: -17px;
+    right: -9px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    justify-content: center;
+    gap: 30px;
+    padding: 20px
+}
+
+.item {
+    box-shadow: 5px 10px 30px #888888;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.price-amount {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amount {
+    font-size: 20px;
+}
+
+.amount .bi-dash {
+    color: red;
+    cursor: pointer;
+}
+
+.amount .bi-dash:hover {
+    color: blue
+}
+
+.amount .bi-plus {
+    color: green;
+}
+
+.amount .bi-plus:hover {
+    color: yellowgreen;
+}
