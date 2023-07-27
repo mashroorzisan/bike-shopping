@@ -70,11 +70,14 @@ body {
     font-size: 20px;
     align-items: center;
     justify-content: space-between;
+    user-select: none;
 }
 
 .amount {
     font-size: 20px;
+
 }
+
 
 .amount .bi-dash {
     color: red;
@@ -91,6 +94,40 @@ body {
 
 .amount .bi-plus:hover {
     color: yellowgreen;
+}
+
+.amount i {
+    font-size: 24px;
+
+}
+
+.amount i+i {
+    margin-left: 10px;
+}
+
+@keyframes countAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.amount span {
+    width: 40px;
+    /* Set a fixed width for the span */
+    text-align: center;
+    /* Center the text horizontally */
+
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    animation: countAnimation 0.3s ease-in-out;
 }
 
 @media (max-width:1000px) {
